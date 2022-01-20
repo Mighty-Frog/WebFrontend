@@ -15,21 +15,41 @@
 		<form method = "get/post">
 			<h1>学生信息管理系统</h1>
 				<div></div>
-				<label>姓名：</label>
+				<label>name：</label>
 				<input type="text" name="name" id="name" />
 			</div>
 			
 			<div>
-				<label>年龄：</label>
+				<label>age：&nbsp;&nbsp;&nbsp; </label>
 				<input type="number" name="age" id="age" />
 			</div>
 			
 			<div>
-				<label>性别：</label>
-				<input type="radio" name="sex" id="sex" />男
-				<input type="radio" name="sex" id="sex" />女
+				<label>Sex：</label>
+				<input type="radio" name="sex" id="sex" value="male" />male
+				<input type="radio" name="sex" id="sex" value="female"/>female
 			</div>
 			
+			<div>
+				<label>Hobby：</label>
+				<input type="checkbox" name="hobby" id="hobby" value="pingpong" />pingpong
+				<input type="checkbox" name="hobby" id="hobby" value="climbing" />climbing
+				<input type="checkbox" name="hobby" id="hobby" value="singing"/>singing
+			</div>
+			
+			<div>
+				<label>Education：</label>
+				<select name="education" id="education">
+					<option value="1">Primary School</option>
+					<option value="2">Middle School</option>
+					<option value="3">High School</option>
+				</select>
+			</div>
+			
+			<div>
+				<input type="button" name="save" value="submit" />
+				<button type="button" name="btnClear">reset</button>
+			</div>
 		</form>
 	</body>
 </html>
